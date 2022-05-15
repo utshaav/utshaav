@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Branding';
+    src: url("../../assets/fonts/Fellya.ttf");
+}
+
+.branding{
+    font-family: Branding;
+}
+
+nav .branding{
+    padding-left: 2rem;
+}
