@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/utshaav/static/css/main.e6c13ad2.css",
-    "main.js": "/utshaav/static/js/main.6ba9659e.js",
-    "static/js/787.1ed0c42c.chunk.js": "/utshaav/static/js/787.1ed0c42c.chunk.js",
-    "static/media/utsav.png": "/utshaav/static/media/utsav.fa4d2bd79bc91b602f7c.png",
-    "static/media/logo.jpg": "/utshaav/static/media/logo.a012e122f56f1417e6d6.jpg",
-    "index.html": "/utshaav/index.html",
-    "main.e6c13ad2.css.map": "/utshaav/static/css/main.e6c13ad2.css.map",
-    "main.6ba9659e.js.map": "/utshaav/static/js/main.6ba9659e.js.map",
-    "787.1ed0c42c.chunk.js.map": "/utshaav/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/utshaav2/static/css/main.0afce741.css",
+    "main.js": "/utshaav2/static/js/main.5240af90.js",
+    "static/js/787.1ed0c42c.chunk.js": "/utshaav2/static/js/787.1ed0c42c.chunk.js",
+    "static/media/utsav.png": "/utshaav2/static/media/utsav.fa4d2bd79bc91b602f7c.png",
+    "static/media/background.jpg": "/utshaav2/static/media/background.3e6312e8fbba77c87020.jpg",
+    "static/media/Fellya.ttf": "/utshaav2/static/media/Fellya.3ee9c2f716d607c8877d.ttf",
+    "index.html": "/utshaav2/index.html",
+    "main.0afce741.css.map": "/utshaav2/static/css/main.0afce741.css.map",
+    "main.5240af90.js.map": "/utshaav2/static/js/main.5240af90.js.map",
+    "787.1ed0c42c.chunk.js.map": "/utshaav2/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.6ba9659e.js"
+    "static/css/main.0afce741.css",
+    "static/js/main.5240af90.js"
   ]
 }
