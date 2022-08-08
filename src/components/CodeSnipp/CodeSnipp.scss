@@ -1,0 +1,92 @@
+.code{
+    z-index: 1;
+    border-radius: 10px;
+    background-color: #11011cf0;
+    height: 70vh;
+    width: 20vw;
+    margin-top: 10px;
+    box-shadow: 0 3px 10px rgba(214, 255, 227, 0.764);
+}
+
+.codeBody{
+    padding: 10px;
+}
+
+.codeHeader{
+    background-color: #1a012c;
+    color: whitesmoke;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.headerButton{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.circle{
+    height: 15px;
+    width: 15px;
+    // background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.red{
+    background-color: red;
+    // color: red;
+}
+
+.yellow{
+    background-color: yellow;
+    // color: yellow;
+}
+
+.green{
+    background-color: green;
+    // color: green;
+}
+
+.key{
+    color: blueviolet;
+    margin-left: 2em;
+}
+
+.seperator{
+    color: rgb(205, 165, 243);
+    // margin-left: 2em; 
+}
+
+.value{
+    color: olivedrab;
+}
+
+.identifier{
+    color: peru;
+}
+
+.variable{
+    color: tomato;
+}
+
+.operator{
+    color: bisque;
+}
+
+.braces:nth-child(odd){
+    color: aqua;
+}
+
+.braces:nth-child(even){
+    color: chartreuse;
+}
+
+.end_braces:nth-child(odd){
+    color: aqua;
+}
+
+.end_braces:nth-child(even){
+    color: chartreuse;
+}
+
