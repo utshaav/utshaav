@@ -1,5 +1,6 @@
 import React from "react";
 import image from "../assets/images/utsav.png";
+import Loader from "../components/Basics/Loader";
 import CodeSnipp from "../components/CodeSnipp/CodeSnipp";
 import "./Introduction.scss";
 
@@ -12,6 +13,8 @@ function Introduction() {
           <p className="intro_text">Hello, </p> 
           <p>I am a software engineer based in Nepal</p>
           <p className="branding">Utsav Kuinkel</p>
+          <Loader animate={false} />
+          <p>This text changes color.</p>
         </div>
         <div className="col-md-6" style={{ backgroundColor: "", height: '92vh' }}>
 

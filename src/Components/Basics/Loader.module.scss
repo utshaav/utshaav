@@ -1,0 +1,33 @@
+.main{
+    display: inline-block;
+    i {
+       padding: 0.5em; 
+       font-size: 2em;
+      //  animation: zoom-in-zoom-out 1s ease infinite;
+    //    position: relative;
+    //    animation-duration: 6s;
+    }
+
+    // @for $i from 1 through 5 {
+       
+    //     i:nth-child(#{$i}) {
+    //     //   background-color: lighten($base-color, $i * 5%);
+    //         animation-delay: $i * 1s;
+    //         // animation: zoom-in-zoom-out ease-out infinite;
+    //         animation-name: zoom-in-zoom-out;
+    //         animation-duration: 5s;
+    //         animation-iteration-count: infinite;
+
+    //     }
+    // }
+
+    
+}
+
+@keyframes zoom-in-zoom-out {
+    50% {
+      font-size: 2em;
+      // padding-left: 1em;
+      // padding-right: 1em;
+    }
+}
