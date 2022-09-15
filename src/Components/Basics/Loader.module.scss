@@ -1,33 +1,66 @@
-.main{
-    display: inline-block;
-    i {
-       padding: 0.5em; 
-       font-size: 2em;
-      //  animation: zoom-in-zoom-out 1s ease infinite;
+.main {
+  display: inline-block;
+
+  i {
+    padding: 0.5em;
+    font-size: 1.5em;
+    //  animation: zoom-in-zoom-out 1s ease infinite;
     //    position: relative;
     //    animation-duration: 6s;
-    }
+  }
 
-    // @for $i from 1 through 5 {
-       
-    //     i:nth-child(#{$i}) {
-    //     //   background-color: lighten($base-color, $i * 5%);
-    //         animation-delay: $i * 1s;
-    //         // animation: zoom-in-zoom-out ease-out infinite;
-    //         animation-name: zoom-in-zoom-out;
-    //         animation-duration: 5s;
-    //         animation-iteration-count: infinite;
+}
 
-    //     }
+.animate {
+  .main {
+    position: absolute;
+    background: linear-gradient(to right, rgb(0, 0, 0) 20%, rgb(255, 255, 255) 40%, rgb(0, 0, 0) 60%, #FFF 80%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    // animation: hue 10s infinite linear;
+    animation: shine 2s linear infinite;
+
+    // @for $i from 1 through 6 {
+
+    //   i:nth-child(#{$i}) {
+    //     // //   background-color: lighten($base-color, $i * 5%);
+    //     //     // animation: zoom-in-zoom-out ease-out infinite;
+    //     //     animation-name: zoom-in-zoom-out;
+    //     //     animation-duration: 6s;
+    //     //     animation-iteration-count: infinite;
+    //     // color: #f29477;
+
+    //     animation-delay: $i * 2s;
+    //   }
     // }
 
-    
+  }
 }
 
 @keyframes zoom-in-zoom-out {
-    50% {
-      font-size: 2em;
-      // padding-left: 1em;
-      // padding-right: 1em;
-    }
+  50% {
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+    // transform: translate(50%, 50%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+}
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
 }

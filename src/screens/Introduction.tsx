@@ -13,8 +13,7 @@ function Introduction() {
           <p className="intro_text">Hello, </p> 
           <p>I am a software engineer based in Nepal</p>
           <p className="branding">Utsav Kuinkel</p>
-          <Loader animate={false} />
-          <p>This text changes color.</p>
+          <Loader/>
         </div>
         <div className="col-md-6" style={{ backgroundColor: "", height: '92vh' }}>
 
