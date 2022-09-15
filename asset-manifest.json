@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/utshaav/static/css/main.6e623e38.css",
-    "main.js": "/utshaav/static/js/main.a1005681.js",
+    "main.css": "/utshaav/static/css/main.921f906a.css",
+    "main.js": "/utshaav/static/js/main.443cfa1d.js",
     "static/js/787.1ed0c42c.chunk.js": "/utshaav/static/js/787.1ed0c42c.chunk.js",
     "static/media/utsav.png": "/utshaav/static/media/utsav.fa4d2bd79bc91b602f7c.png",
     "static/media/background.jpg": "/utshaav/static/media/background.3e6312e8fbba77c87020.jpg",
     "static/media/Fellya.ttf": "/utshaav/static/media/Fellya.3ee9c2f716d607c8877d.ttf",
     "index.html": "/utshaav/index.html",
-    "main.6e623e38.css.map": "/utshaav/static/css/main.6e623e38.css.map",
-    "main.a1005681.js.map": "/utshaav/static/js/main.a1005681.js.map",
+    "main.921f906a.css.map": "/utshaav/static/css/main.921f906a.css.map",
+    "main.443cfa1d.js.map": "/utshaav/static/js/main.443cfa1d.js.map",
     "787.1ed0c42c.chunk.js.map": "/utshaav/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e623e38.css",
-    "static/js/main.a1005681.js"
+    "static/css/main.921f906a.css",
+    "static/js/main.443cfa1d.js"
   ]
 }
