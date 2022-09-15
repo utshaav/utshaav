@@ -9,8 +9,8 @@ function Introduction() {
     <div className="container">
       {/* <CodeSnipp /> */}
       <div className="row ">
-        <div className="col-md-6 center">
-          <p className="intro_text">Hello, </p> 
+        <div className="intro_text col-md-6 center">
+          <p>Hello, </p> 
           <p>I am a software engineer based in Nepal</p>
           <p className="branding">Utsav Kuinkel</p>
           <Loader/>
