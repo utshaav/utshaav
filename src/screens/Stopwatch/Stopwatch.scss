@@ -1,0 +1,50 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+@font-face {
+    font-family: 'Clock';
+    src: url("../../assets/fonts/clockicons.ttf");
+}
+.stop-watch {
+  display: flex;
+//   height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.App {
+  font-family: NanumSquare;
+  text-align: center;
+}
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.time {
+  font-size: 20em;
+  font-family: Clock;
+}
+.right {
+  margin-left: 20px;
+}
+.unit {
+  margin-left: 10px;
+  font-size: 16px;
+}
+.button-wrapper {
+  display: flex;
+  
+  justify-content: space-evenly;
+  margin-top: 40px;
+  width: 90%;
+}
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 38px;
+}
+.button:hover {
+  cursor: pointer;
+}

@@ -10,3 +10,9 @@
 nav .branding{
     padding-left: 2rem;
 }
+
+#navbarNav, .navbar-nav{
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+

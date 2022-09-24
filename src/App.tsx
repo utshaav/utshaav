@@ -4,12 +4,15 @@ import './App.scss';
 import Introduction from './screens/Introduction';
 import NavBar from './components/navbar/NavBar';
 import Loader from './components/Basics/Loader';
+import Router from './Router/Router';
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Introduction />
+      <Router>
+        <NavBar />
+        {/* <Introduction /> */}
+      </Router>
     </>
   );
 }

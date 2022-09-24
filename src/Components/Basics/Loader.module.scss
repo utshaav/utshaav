@@ -3,7 +3,7 @@
 
   i {
     padding: 0.5em;
-    font-size: 1.5em;
+    font-size: 2em;
     //  animation: zoom-in-zoom-out 1s ease infinite;
     //    position: relative;
     //    animation-duration: 6s;
@@ -20,7 +20,9 @@
     -webkit-text-fill-color: transparent;
     // animation: hue 10s infinite linear;
     animation: shine 2s linear infinite;
-
+    i{
+      font-size: 1.5em;
+    }
     // @for $i from 1 through 6 {
 
     //   i:nth-child(#{$i}) {
