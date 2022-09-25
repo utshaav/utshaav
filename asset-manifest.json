@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.da8b5037.css",
-    "main.js": "/static/js/main.dccd7820.js",
+    "main.js": "/static/js/main.3623d0cd.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/utsav.png": "/static/media/utsav.fa4d2bd79bc91b602f7c.png",
     "static/media/background.jpg": "/static/media/background.3e6312e8fbba77c87020.jpg",
@@ -9,11 +9,11 @@
     "static/media/clockicons.ttf": "/static/media/clockicons.bbea6b2ddde369d06918.ttf",
     "index.html": "/index.html",
     "main.da8b5037.css.map": "/static/css/main.da8b5037.css.map",
-    "main.dccd7820.js.map": "/static/js/main.dccd7820.js.map",
+    "main.3623d0cd.js.map": "/static/js/main.3623d0cd.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.da8b5037.css",
-    "static/js/main.dccd7820.js"
+    "static/js/main.3623d0cd.js"
   ]
 }
