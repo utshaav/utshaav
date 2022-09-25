@@ -1,7 +1,7 @@
 import React from "react";
 import image from "../assets/images/utsav.png";
-import Loader from "../components/Basics/Loader";
-import CodeSnipp from "../components/CodeSnipp/CodeSnipp";
+import Loader from "../Components/Basics/Loader";
+import CodeSnipp from "../Components/CodeSnipp/CodeSnipp";
 import "./Introduction.scss";
 
 function Introduction() {

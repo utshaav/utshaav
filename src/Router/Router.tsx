@@ -15,7 +15,7 @@ function Router({children}:ButtonProps) {
             {children}
         </div>
         <Routes>
-        {["/home", "/", "/utshaav"].map((path, index) => 
+        {["/home", "/", "/utshaav", ""].map((path, index) => 
             <Route path={path} key={index} element={<Introduction />}/>
          )}
           
