@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react'
-import { Link, Routes, Route, BrowserRouter } from 'react-router-dom'
+import { Link, Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom'
 import Introduction from '../screens/Introduction';
 import StopWatch from '../screens/Stopwatch/Stopwatch';
 import Timer from '../screens/Stopwatch/Timer';
@@ -10,7 +10,7 @@ interface ButtonProps {
 
 function Router({children}:ButtonProps) {
   return (
-    <BrowserRouter>
+    <HashRouter basename={process.env.PUBLIC_URL}>
         <div>
             {children}
         </div>
@@ -18,10 +18,12 @@ function Router({children}:ButtonProps) {
         {["/home", "/", "/utshaav", ""].map((path, index) => 
             <Route path={path} key={index} element={<Introduction />}/>
          )}
-          
-          <Route path="/stopwatch" element={<StopWatch />} />
+         {["/stopwatch", "/portfolio/stopwatch"].map((path, index) => 
+            <Route path={path} key={index} element={<StopWatch />}/>
+         )}
+          portfolio
         </Routes>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
