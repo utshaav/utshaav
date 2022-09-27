@@ -14,17 +14,19 @@ function Stopwatch() {
   useEffect(() => {
     let interval: any = undefined;
     if (start) {
-      let i = 0;
+      let i = time;
       let styleChanged = false;
       interval = setInterval(() => {
         i++;
         setTime(prev => prev + 1)
         if (!styleChanged) {
           if (preset === "IReading") {
-            if(i === 3300){
+            if(i >= 3300 && i < 3600){
+            // if(i >= 10 && i < 12){
               document.getElementById("timer")!.style.color = "orange";
             }
-            else if (i === 3600) {
+            else if (i > 3600) {
+            // else if (i > 12) {
               setTime(0);
               document.getElementById("timer")!.style.color = "red";
               styleChanged = true;
@@ -48,6 +50,12 @@ function Stopwatch() {
 
   }, [start,preset])
 
+  let reset = function (){
+    setTime(0); 
+    setStart(false);
+    document.getElementById("timer")!.style.color = "rgb(33 37 41)";
+  }
+
 
   // const { time, timer } = state;
   return (
@@ -60,7 +68,7 @@ function Stopwatch() {
             color={start ? "primary" : "success"}
             onClick={start ? () => setStart(false) : () => setStart(true)}
           />
-          <Button title="reset" color="danger" onClick={() => { setTime(0); setStart(false) }} />
+          <Button title="reset" color="danger" onClick={reset} />
 
         </div>
         <div className="presets">
