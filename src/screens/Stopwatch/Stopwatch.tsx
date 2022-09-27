@@ -1,15 +1,39 @@
 import react, { useEffect, useState } from "react";
+import {Howl, Howler} from 'howler';
+
 import "./Stopwatch.scss";
 
 import Timer from "./Timer";
 import Button from "./Button";
-import { prototype } from "stream";
+
+
+import cowMooSound from "../../assets/audio/Cow-moo-sound.mp3";
+import heartbeatSound from "../../assets/audio/Heartbeat-sound-effect.mp3";
+import tadaSound from "../../assets/audio/Tada-sound.mp3";
+
+
+var cowMoo =new Howl({
+  src: cowMooSound,
+  autoplay: false,
+  loop: false,
+  volume: 1
+});
+var heartBeat = new Howl({
+  src: heartbeatSound,
+  autoplay: false,
+  loop: true,
+  volume: 1
+});
+// const tada = new Audio(tadaSound);
 
 
 function Stopwatch() {
   const [time, setTime] = useState(0);
   const [preset, setPreset] = useState<"IReading" | "IWriting" | "">("");
   const [start, setStart] = useState(false);
+  console.log('hehe')
+
+  console.log('hehe')
 
   useEffect(() => {
     let interval: any = undefined;
@@ -24,9 +48,13 @@ function Stopwatch() {
             if(i >= 3300 && i < 3600){
             // if(i >= 10 && i < 12){
               document.getElementById("timer")!.style.color = "orange";
+              heartBeat.play()
+              // heartBeat.on();
             }
             else if (i > 3600) {
             // else if (i > 12) {
+              cowMoo.play();
+              heartBeat.stop();
               setTime(0);
               document.getElementById("timer")!.style.color = "red";
               styleChanged = true;
