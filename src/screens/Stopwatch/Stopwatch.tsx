@@ -31,9 +31,7 @@ function Stopwatch() {
   const [time, setTime] = useState(0);
   const [preset, setPreset] = useState<"IReading" | "IWriting" | "">("");
   const [start, setStart] = useState(false);
-  console.log('hehe')
-
-  console.log('hehe')
+  // const [soundStarted, setSoundStarted] = useState(false);
 
   useEffect(() => {
     let interval: any = undefined;
@@ -46,9 +44,12 @@ function Stopwatch() {
         if (!styleChanged) {
           if (preset === "IReading") {
             if(i >= 3300 && i < 3600){
-            // if(i >= 10 && i < 12){
-              document.getElementById("timer")!.style.color = "orange";
-              heartBeat.play()
+            // if(i >= 10 && i < 12  ){
+              
+                document.getElementById("timer")!.style.color = "orange";
+                if(!heartBeat.playing())
+                  heartBeat.play()
+                // setSoundStarted(true)
               // heartBeat.on();
             }
             else if (i > 3600) {
@@ -70,6 +71,8 @@ function Stopwatch() {
       }, 1000)
     }
     else {
+      if(heartBeat.playing()) 
+        heartBeat.stop();
       clearInterval(interval)
     }
 
@@ -81,6 +84,8 @@ function Stopwatch() {
   let reset = function (){
     setTime(0); 
     setStart(false);
+    if(heartBeat.playing())
+      heartBeat.stop()
     document.getElementById("timer")!.style.color = "rgb(33 37 41)";
   }
 

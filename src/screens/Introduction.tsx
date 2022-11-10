@@ -1,5 +1,6 @@
 import React from "react";
-import image from "../assets/images/utsav.png";
+// import image from "../assets/images/utsav.png";
+import image from "../assets/images/prog3.gif";
 import Loader from "../Components/Basics/Loader";
 import CodeSnipp from "../Components/CodeSnipp/CodeSnipp";
 import "./Introduction.scss";
@@ -15,7 +16,7 @@ function Introduction() {
           <p className="branding">Utsav Kuinkel</p>
           <Loader/>
         </div>
-        <div className="col-md-6" style={{ backgroundColor: "", height: '92vh' }}>
+        <div className="col-md-6 center" style={{ backgroundColor: "", height: '90vh' }} >
         </div>
       </div>
       <img className="corner-image" src={image} alt="Mero pic lol" />
