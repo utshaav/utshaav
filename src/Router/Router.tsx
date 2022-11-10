@@ -3,6 +3,7 @@ import { Link, Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom
 import NavBar from '../Components/navbar/NavBar';
 import Contact from '../screens/Contact/Contact';
 import Introduction from '../screens/Introduction';
+import PageNotFound from '../screens/PageNotFound';
 import StopWatch from '../screens/Stopwatch/Stopwatch';
 import Timer from '../screens/Stopwatch/Timer';
 
@@ -29,6 +30,8 @@ import Timer from '../screens/Stopwatch/Timer';
             <Route path={path} key={index} element={<Contact />}/>
          )}
           {/* portfolio */}
+
+          <Route path='*'  element={<PageNotFound />}/>
         </Routes>
         {/* <div>
         {footer}
