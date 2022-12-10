@@ -17,9 +17,10 @@ function Introduction() {
           <Loader/>
         </div>
         <div className="col-md-6 center" style={{ backgroundColor: "", height: '90vh' }} >
+        <img className="" src={image} alt="Mero pic lol" />
         </div>
       </div>
-      <img className="corner-image" src={image} alt="Mero pic lol" />
+      
     </div>
   )
 }
