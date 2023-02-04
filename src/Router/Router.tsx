@@ -26,7 +26,7 @@ import Timer from '../screens/Stopwatch/Timer';
          {["/stopwatch", "/portfolio/stopwatch"].map((path, index) => 
             <Route path={path} key={index} element={<StopWatch />}/>
          )}
-          {["/contact-me", "/portfolio/contact-me"].map((path, index) => 
+          {["/contact-me","/contact" ,"/portfolio/contact-me"].map((path, index) => 
             <Route path={path} key={index} element={<Contact />}/>
          )}
           {/* portfolio */}
