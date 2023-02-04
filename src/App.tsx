@@ -7,11 +7,6 @@ import Loader from './Components/Basics/Loader';
 import Router from './Router/Router';
 import { Navbar } from 'react-bootstrap';
 
-import './assets/fonts/clockicons.ttf';
-import './assets/fonts/Fellya.ttf';
-import './assets/fonts/Halimun.ttf';
-
-
 function App() {
   return (
     <>
