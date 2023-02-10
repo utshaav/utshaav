@@ -23,10 +23,18 @@ $white: #ffffff;
 .ContactMe {
     height: 91vh;
 
+    .social-container {
+        // margin-top: 30px;
 
-    .social {
-        margin-left: 10px;
-        margin-right: 10px;
+        .social {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+
+        a {
+            color: $white;
+        }
     }
 
     .container {
@@ -59,7 +67,7 @@ $white: #ffffff;
     .right-container {
         display: flex;
         flex: 1;
-        height: 500px;
+        height: 100%;
         background-color: $white;
         justify-content: center;
         align-items: center;
@@ -142,6 +150,35 @@ $white: #ffffff;
 
     form p {
         text-align: left;
+    }
+
+    form span {
+        position: absolute;
+        left: 58%;
+        // margin-top: 50px;
+        // top: 10px;
+        // width: 100%;
+        font-size: 0.5em;
+        color: red;
+        margin-top: -5px;
+    }
+
+
+    /* Scrollbar Styling */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background-color: #ebebeb;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background: #bcb7b7;
     }
 }
 
