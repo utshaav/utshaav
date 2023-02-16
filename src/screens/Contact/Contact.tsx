@@ -30,7 +30,7 @@ function Contact() {
     var postData: any = { ...formValues, subject: "Message from utsavkuinkel.com.np" };
     let success = false;
     toast.promise(
-      fetch('http://localhost:5097/api/mail/send', {
+      fetch('https://utshaav.bsite.net/api/mail/send', {
         method: 'post',
         body: JSON.stringify(postData),
         headers: {
