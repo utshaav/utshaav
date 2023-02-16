@@ -46,7 +46,7 @@ $white: #ffffff;
         overflow: hidden;
         width: 70%;
         max-width: 100%;
-        min-height: 500px;
+        // min-height: 500px;
         min-width: 500px;
         --bs-gutter-x: 0rem;
         top: 5%;
@@ -60,7 +60,7 @@ $white: #ffffff;
 
     .form-container {
         display: flex;
-        height: 80vh;
+        // height: 80vh;
     }
 
 
@@ -90,6 +90,8 @@ $white: #ffffff;
         width: 70%;
         height: 80%;
         text-align: center;
+        padding-top: 19px;
+        padding-bottom: 19px;
     }
 
     .left-inner-container {
