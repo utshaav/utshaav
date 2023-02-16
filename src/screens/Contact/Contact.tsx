@@ -30,9 +30,14 @@ function Contact() {
     var postData: any = { ...formValues, subject: "Message from utsavkuinkel.com.np" };
     let success = false;
     toast.promise(
-      fetch('http://www.utshaav.somee.com/api/mail/send', {
+      fetch('https://utshaav.bsite.net/api/mail/send', {
         method: 'post',
         body: JSON.stringify(postData),
+        mode: 'no-cors',
+        headers: {
+          'Content-Type': 'application/json'
+          // 'Content-Type': 'application/x-www-form-urlencoded',
+        }
       }).then((response) => response.json())
         .then((result) => {
           setFormSubmitted(true);
@@ -41,7 +46,7 @@ function Contact() {
       {
         pending: 'Processing your request.',
         success: 'Message delivered.👌',
-        error: 'Failed to deliver the message.🤯'
+        error: 'Failed to deliver the messsage.🤯'
       }
     )
   }
