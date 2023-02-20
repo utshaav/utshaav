@@ -11,9 +11,10 @@ function Introduction() {
       {/* <CodeSnipp /> */}
       <div className="row ">
         <div className="intro_text col-md-6 center">
-          <p>Hello, </p> 
-          <p>I am a software engineer based in Nepal</p>
-          <p className="branding">Utsav Kuinkel</p>
+          <p>Hello 👋 </p> 
+          <p>I am Utsav Kuinkel. I am a software engineer with more than two years of professional experience in full stack development.</p>
+          {/* <p className="branding">Utsav Kuinkel</p> */}
+          <br/>
           <Loader/>
         </div>
         <div className="col-md-6 center" style={{ backgroundColor: "", height: '90vh' }} >
