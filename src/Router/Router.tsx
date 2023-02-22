@@ -1,6 +1,7 @@
 import React, { ReactNode } from 'react'
 import { Link, Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom'
 import NavBar from '../Components/navbar/NavBar';
+import SignIn from '../screens/Authorization/SignIn';
 import Contact from '../screens/Contact/Contact';
 import Introduction from '../screens/Introduction';
 import PageNotFound from '../screens/PageNotFound';
@@ -13,27 +14,31 @@ import Timer from '../screens/Stopwatch/Timer';
 //   };
 
 // function Router({children, footer}:ButtonProps) {
-  function Router() {
+function Router() {
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
-        <div>
-            <NavBar/>
-        </div>
-        <Routes>
-        {["/home", "/", "/utshaav", ""].map((path, index) => 
-            <Route path={path} key={index} element={<Introduction />}/>
-         )}
-         {["/stopwatch", "/portfolio/stopwatch"].map((path, index) => 
-            <Route path={path} key={index} element={<StopWatch />}/>
-         )}
-          {["/contact-me","/contact" ,"/portfolio/contact-me"].map((path, index) => 
-            <Route path={path} key={index} element={<Contact />}/>
-         )}
-          {/* portfolio */}
+      <div>
+        <NavBar />
+      </div>
+      <Routes>
+        {["/home", "/", "/utshaav", ""].map((path, index) =>
+          <Route path={path} key={index} element={<Introduction />} />
+        )}
+        {["/stopwatch", "/portfolio/stopwatch"].map((path, index) =>
+          <Route path={path} key={index} element={<StopWatch />} />
+        )}
+        {["/contact-me", "/contact", "/portfolio/contact-me"].map((path, index) =>
+          <Route path={path} key={index} element={<Contact />} />
+        )}
 
-          <Route path='*'  element={<PageNotFound />}/>
-        </Routes>
-        {/* <div>
+        {["/sign-in", "/register", "/portfolio/register"].map((path, index) =>
+          <Route path={path} key={index} element={<SignIn />} />
+        )}
+        {/* portfolio */}
+
+        <Route path='*' element={<PageNotFound />} />
+      </Routes>
+      {/* <div>
         {footer}
 
         </div> */}
