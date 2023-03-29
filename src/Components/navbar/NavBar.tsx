@@ -18,6 +18,9 @@ function NavBar() {
               <Link to="/stopwatch" className='nav-link'>Stopwatch</Link>
             </li>
             <li className="nav-item">
+              <Link to="/Documentation" className='nav-link'>Documentation</Link>
+            </li>
+            <li className="nav-item">
               <Link to="/contact" className='nav-link'>Contact Me</Link>
             </li>
           </ul>
