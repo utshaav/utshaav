@@ -1,52 +1,73 @@
-import React from 'react'
+import React, { useState } from 'react'
+import "../Authorization/SignIn.scss"
 
 function SignIn() {
+
+    const [currentPage, setCurrentPage] = useState("signin");
+
+
+    var handleChange = (e: any) => {
+        e.preventDefault();
+        var tabName: any = e.currentTarget;
+        var currentTab = tabName.dataset.tabname;
+        document.getElementsByClassName("active");
+        for (const li of document.querySelectorAll("a.active")) {
+            li.classList.remove("active");
+        }
+        tabName.classList.add("active");
+        setCurrentPage(currentTab)
+    }
+
+
+
+
     return (
-        <section className="vh-100 gradient-custom">
-            <div className="container py-5 h-100">
-                <div className="row d-flex justify-content-center align-items-center h-100">
-                    <div className="col-12 col-md-8 col-lg-6 col-xl-5">
-                        <div className="card bg-dark text-white" style={{borderRadius: '1 rem'}}>
-                            <div className="card-body p-5 text-center">
+        <div className='d-flex justify-content-center align-items-center main-div'>
 
-                                <div className="mb-md-5 mt-md-4 pb-5">
-
-                                    <h2 className="fw-bold mb-2 text-uppercase">Login</h2>
-                                    <p className="text-white-50 mb-5">Please enter your login and password!</p>
-
-                                    <div className="form-outline form-white mb-4">
-                                        <input type="email" id="typeEmailX" className="form-control form-control-lg" />
-                                        <label className="form-label">Email</label>
-                                    </div>
-
-                                    <div className="form-outline form-white mb-4">
-                                        <input type="password" id="typePasswordX" className="form-control form-control-lg" />
-                                        <label className="form-label">Password</label>
-                                    </div>
-
-                                    <p className="small mb-5 pb-lg-2"><a className="text-white-50" href="#!">Forgot password?</a></p>
-
-                                    <button className="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
-
-                                    <div className="d-flex justify-content-center text-center mt-4 pt-1">
-                                        <a href="#!" className="text-white"><i className="fab fa-facebook-f fa-lg"></i></a>
-                                        <a href="#!" className="text-white"><i className="fab fa-twitter fa-lg mx-4 px-2"></i></a>
-                                        <a href="#!" className="text-white"><i className="fab fa-google fa-lg"></i></a>
-                                    </div>
-
-                                </div>
-
-                                <div>
-                                    <p className="mb-0">Don't have an account? <a href="#!" className="text-white-50 fw-bold">Sign Up</a>
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
+            <form className='login-form'>
+                <ul className="nav nav-tabs">
+                    <li className="nav-item">
+                        <a className="nav-link active" data-tabname="signin" aria-current="page" onClick={handleChange}>SignIn</a>
+                    </li>
+                    <li className="nav-item">
+                        <a className="nav-link" data-tabname="signup" onClick={handleChange}>SignUp</a>
+                    </li>
+                </ul>
+                {currentPage == "signin" && <>
+                    <div className=" inputs mb-3">
+                        <label className="form-label">Email address</label>
+                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
                     </div>
-                </div>
-            </div>
-        </section>
+                    <div className="mb-3">
+                        <label className="form-label">Password</label>
+                        <input type="password" className="form-control" id="exampleInputPassword1" />
+                    </div>
+                    <div className="mb-3 form-check">
+                        <input type="checkbox" className="form-check-input" id="exampleCheck1" />
+                        <label className="form-check-label" >Check me out</label>
+                    </div>
+                    <button type="submit" className="btn btn-primary">Submit</button>
+                </>}
+                {currentPage == "signup" && <>
+                    <div className=" inputs mb-3">
+                        <label className="form-label">Full Name</label>
+                        <input type="text" className="form-control" id="fullName" aria-describedby="fullnameHelp" />
+                    </div><div className=" inputs mb-3">
+                        <label className="form-label">Email address</label>
+                        <input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                        <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div className="mb-3">
+                        <label className="form-label">Password</label>
+                        <input type="password" className="form-control" id="exampleInputPassword1" />
+                    </div>
+                    <button type="submit" className="btn btn-primary">Submit</button>
+                </>}
+
+
+            </form>
+        </div>
     )
 }
 

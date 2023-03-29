@@ -3,6 +3,7 @@ import { Link, Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom
 import NavBar from '../Components/navbar/NavBar';
 import SignIn from '../screens/Authorization/SignIn';
 import Contact from '../screens/Contact/Contact';
+import DisplayDocs from '../screens/Documentations/DisplayDocs';
 import Introduction from '../screens/Introduction';
 import PageNotFound from '../screens/PageNotFound';
 import StopWatch from '../screens/Stopwatch/Stopwatch';
@@ -33,6 +34,10 @@ function Router() {
 
         {["/sign-in", "/register", "/portfolio/register"].map((path, index) =>
           <Route path={path} key={index} element={<SignIn />} />
+        )}
+
+        {["/document", "/documentation", "/portfolio/documentation"].map((path, index) =>
+          <Route path={path} key={index} element={<DisplayDocs />} />
         )}
         {/* portfolio */}
 
