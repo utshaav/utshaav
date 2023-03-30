@@ -1,63 +1,32 @@
-# github-markdown-css
+# React knoledge sharing
+> A brief introduction to react
+## Prerequisite
 
-> The minimal amount of CSS to replicate the GitHub Markdown style
+1. Softare requirement
+	- Node
+	- A Code editor (VS Code)
+3. Skills requirement
+	- HTML
+	- CSS
+	- JS
 
-**The CSS is generated. Contributions should go to [this repo](https://github.com/sindresorhus/generate-github-markdown-css).**
+## Intro to Node.JS
 
-[<img src="https://cloud.githubusercontent.com/assets/170270/5219062/f22a978c-7685-11e4-8316-af25b6c89bc0.png" width="300">](http://sindresorhus.com/github-markdown-css)
+Node. js is an open-source, cross-platform JavaScript runtime environment and library for running web applications outside the client's browser.
 
-## [Demo](https://sindresorhus.com/github-markdown-css)
+## First things first
 
-## Install
+- **Library**
 
-Download [manually](https://raw.githubusercontent.com/sindresorhus/github-markdown-css/gh-pages/github-markdown.css), from [CDNJS](https://cdnjs.com/libraries/github-markdown-css), or with npm:
+	It is just a collection of routines (functional programming) or class definitions(object oriented programming). The reason behind is simply code reuse, i.e. get the code that has already been written by other developers. The classes or routines normally define specific operations in a domain specific area. For example, there are some libraries of mathematics which can let developer just call the function without redo the implementation of how an algorithm works.
 
-```sh
-npm install github-markdown-css
-```
+- **Frameork** 
 
-## Usage
+	In framework, all the control flow is already there, and there are a bunch of predefined white spots that we should fill out with our code. A framework is normally more complex. It defines a skeleton where the application defines its own features to fill out the skeleton. In this way, your code will be called by the framework when appropriately. The benefit is that developers do not need to worry about if a design is good or not, but just about implementing domain specific functions.
 
-Import the `github-markdown.css` file and add a `markdown-body` class to the container of your rendered Markdown and set a width for it. GitHub uses `980px` width and `45px` padding, and `15px` padding for mobile.
+## React k hola ta ?
 
-```html
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="github-markdown.css">
-<style>
-	.markdown-body {
-		box-sizing: border-box;
-		min-width: 200px;
-		max-width: 980px;
-		margin: 0 auto;
-		padding: 45px;
-	}
+- [x] Library
+- [ ] Frameork
 
-	@media (max-width: 767px) {
-		.markdown-body {
-			padding: 15px;
-		}
-	}
-</style>
-<article class="markdown-body">
-	<h1>Unicorns</h1>
-	<p>All the things</p>
-</article>
-```
 
-You can use [GitHub's `/markdown` API](https://docs.github.com/en/free-pro-team@latest/rest/reference/markdown) to turn Markdown into the HTML that GitHub generates, which works well with the CSS in this repo. Other Markdown parsers will mostly work with these styles too. To mimic how GitHub highlights code, you can use [`starry-night`](https://github.com/wooorm/starry-night) with your Markdown parser of choice.
-
-There are 3 themes provided in this package:
-
-- **github-markdown.css**: (default) Automatically switches between light and dark through [`@media (prefers-color-scheme)`](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-color-scheme).
-- **github-markdown-light.css**: Light-only.
-- **github-markdown-dark.css**: Dark-only.
-
-You may know that now GitHub supports more than 2 themes including `dark_dimmed`, `dark_high_contrast` and `colorblind` variants. If you want to try these themes, you can generate them on your own! See next section.
-
-## How
-
-See [`generate-github-markdown-css`](https://github.com/sindresorhus/generate-github-markdown-css) for how it's generated and ability to generate your own.
-
-## Dev
-
-Run `npm run make` to update the CSS.
