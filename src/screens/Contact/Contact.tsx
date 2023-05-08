@@ -46,8 +46,8 @@ function Contact() {
         }),
       {
         pending: 'Processing your request.',
-        success: 'Message delivered.👌',
-        error: 'Failed to deliver the messsage.🤯'
+        success: 'Message delivered.',
+        error: 'Backend server is down.'
       }
     )
   }

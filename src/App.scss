@@ -41,3 +41,13 @@
   font-family: 'Clock';
   src: url("./assets/fonts/clockicons.ttf");
 }
+
+
+@font-face {
+  font-family: 'Branding';
+  src: url("./assets/fonts/Fellya.ttf");
+}
+
+.branding{
+  font-family: Branding !important;
+}

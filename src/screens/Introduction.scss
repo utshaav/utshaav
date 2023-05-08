@@ -1,3 +1,4 @@
+
 .corner-image{
     position: absolute;
     bottom: 0;
@@ -10,19 +11,28 @@
 .center{
     display: flex!important;
     align-content: center;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
+    flex-wrap: wrap;
+    text-align: left;
+    .image{
+        align-items: center;
+
+    }
 }
 
 .intro_text{
-    // font-size: 2rem;
-    p{
-        font-family: 'Open Sans';
-        font-size: 20px;
+    .mail{
+        font-size: 15px;
     }
+        font-size: 35px;
+        font-family: 'Share Tech Mono';
 }
+
+.myname{
+    font-weight: bold;
+}
+
 
 // p {
 //     animation-name: change-color, grow-shrink, expand;

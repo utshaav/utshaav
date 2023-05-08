@@ -5,11 +5,11 @@ function CodeSnipp() {
   return (
     <div className='code'>
       <div className='codeHeader'>
-        <span className='headerButton'>
+        {/* <span className='headerButton'>
           <span className='circle red'></span>
           <span className='circle yellow'></span>
           <span className='circle green'></span>
-        </span>
+        </span> */}
         <span>HeaderTitle.js</span>
       </div>
       <div className='codeBody'>
@@ -21,7 +21,19 @@ function CodeSnipp() {
         {/* End Constant */}
         <span className='key'>Name </span>
         <span className='seperator'> : </span>
-        <span className='value'> 'Utsav Kuinkel'</span> <br/>
+        <span className='value'> 'Utsav Kuinkel'</span> 
+        <span className='seperator'> , </span> <br/>
+
+
+        <span className='key'>Hobbies </span>
+        <span className='seperator'> : </span>
+        <span className='braces'> [ </span>  <br />
+        <span className='innerValue'> 
+
+        <span className='value'> 'Utsav Kuinkel'</span>  <br/>
+        <span className='end_braces'> ] </span> 
+        </span>
+        <span className='seperator'> , </span> <br/>
         
 
 
