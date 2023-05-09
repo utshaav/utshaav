@@ -21,6 +21,22 @@ function Contact() {
 
   }, [formSubmitted])
 
+  useEffect(() => {
+    const onPageLoad = () => {
+      document.getElementById("loading")!.style.display = "none";
+    };
+
+    // Check if the page has already loaded
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      document.getElementById("loading")!.style.display = "block";
+      window.addEventListener('load', onPageLoad);
+      // Remove the event listener when component unmounts
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+  }, []);
+
   let handleSubmit: Function = function (e: Event) {
     debugger;
 
@@ -47,8 +63,8 @@ function Contact() {
       {
         pending: 'Processing your request.',
         success: 'Message delivered.',
-        error: 'Backend server is down.'
-      }
+        error: 'Backend server is down. Please write me a mail at contact-me@utshaav.com.np.'
+      } 
     )
   }
 

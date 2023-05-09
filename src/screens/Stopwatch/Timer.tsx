@@ -24,7 +24,7 @@ function Timer({ time }: TimerProps) {
 
   return (
     <div>
-      <span className="time" id="timer">{String(min).padStart(2, '0') }:{String(sec).padStart(2, '0')}</span>
+      <span className="time" id="timer" data-text="88:88">{String(min).padStart(2, '0') }:{String(sec).padStart(2, '0')}</span>
       {/* <span className="unit">min</span>
       <span className="time right">{sec}</span>
       <span className="unit">sec</span> */}

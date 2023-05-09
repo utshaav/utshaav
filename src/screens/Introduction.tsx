@@ -7,20 +7,26 @@ import "./Introduction.scss";
 import { setInterval } from "timers";
 
 function Introduction() {
-  const [isLoading, setIsLoading] = useState(true);
+  
   useEffect(() => {
-      console.log("WE SHOULD BE ABLE TO SEE THIS")
-      setIsLoading(false);
-  }, [])
+    const onPageLoad = () => {
+      document.getElementById("loading")!.style.display = "none";
+    };
 
-  window.onload = () => {
-    document.getElementById("loading")!.style.display = "none";
-  }
+    // Check if the page has already loaded
+    if (document.readyState === 'complete') {
+      onPageLoad();
+    } else {
+      document.getElementById("loading")!.style.display = "block";
+      window.addEventListener('load', onPageLoad);
+      // Remove the event listener when component unmounts
+      return () => window.removeEventListener('load', onPageLoad);
+    }
+  }, []);
 
   return (
     <>
-    {isLoading && <Loader/>}
-    {!isLoading && <div className="container">
+    <div className="container">
     {/* <CodeSnipp /> */}
     <div className="row " style={{height:'91vh'}}>
       <div className="intro_text col-md-6 center">
@@ -34,14 +40,14 @@ function Introduction() {
         </p>
         {/* <Loader/> */}
         {/* <CodeSnipp /> */}
-        <p className="mail">Get in touch 👉 <span> <a href="mailto:contactme@utshaav.com.np">contactme@utshaav.com.np</a></span></p>
+        <p className="mail">Get in touch 👉 <span> <a href="mailto:contact-me@utshaav.com.np">contact-me@utshaav.com.np</a></span></p>
       </div>
       <div className="col-md-6 center image" style={{  }} >
       <img className="" src={image} alt="Mero pic lol" />
       </div>
     </div>
     
-  </div>}
+  </div>
   </>
   )
 }

@@ -19,7 +19,7 @@
 }
 .time {
   font-size: 20em;
-  font-family: Clock;
+  font-family: 'Digital Numbers', sans-serif;;
 }
 @media screen and (max-width: 759px) {
   .time {
@@ -55,4 +55,20 @@
   a{
     padding: 20px;
   }
+}
+
+#timer{
+  position: relative;
+}
+
+#timer:before,#timer:after{
+  position: absolute;
+  content: attr(data-text);
+  width: 100%;
+  height: 100%;
+  top:-10;
+  left:0;
+  color: black;
+  opacity: 0.05;
+  z-index: -1;
 }

@@ -34,8 +34,8 @@ function DisplayDocs() {
             <div className='docs_list'>
                 <h3>Available Docs</h3>
                 <ul>
-                {listOfDocs.map(function (e) {
-                    return <li><a id={e} onClick={() => handleLinkClick(e)}> {e} </a></li>
+                {listOfDocs.map(function (e,i) {
+                    return <li key={i}><a id={e} onClick={() => handleLinkClick(e)}> {e} </a></li>
                 })}
                 </ul>
                 
