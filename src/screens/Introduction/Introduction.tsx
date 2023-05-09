@@ -1,29 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 // import image from "../assets/images/utsav.png";
-import image from "../assets/images/prog3.gif";
-import Loader from "../Components/Basics/Loader";
-import CodeSnipp from "../Components/CodeSnipp/CodeSnipp";
+import image from "../../assets/images/prog3.gif";
+// import Loader from "../../Components/Basics/Loader";
+// import CodeSnipp from "../../Components/CodeSnipp/CodeSnipp";
 import "./Introduction.scss";
-import { setInterval } from "timers";
+// import { setInterval } from "timers";
 
 function Introduction() {
   
-  useEffect(() => {
-    const onPageLoad = () => {
-      document.getElementById("loading")!.style.display = "none";
-    };
-
-    // Check if the page has already loaded
-    if (document.readyState === 'complete') {
-      onPageLoad();
-    } else {
-      document.getElementById("loading")!.style.display = "block";
-      window.addEventListener('load', onPageLoad);
-      // Remove the event listener when component unmounts
-      return () => window.removeEventListener('load', onPageLoad);
-    }
-  }, []);
-
   return (
     <>
     <div className="container">

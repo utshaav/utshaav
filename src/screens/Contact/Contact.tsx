@@ -21,30 +21,13 @@ function Contact() {
 
   }, [formSubmitted])
 
-  useEffect(() => {
-    const onPageLoad = () => {
-      document.getElementById("loading")!.style.display = "none";
-    };
-
-    // Check if the page has already loaded
-    if (document.readyState === 'complete') {
-      onPageLoad();
-    } else {
-      document.getElementById("loading")!.style.display = "block";
-      window.addEventListener('load', onPageLoad);
-      // Remove the event listener when component unmounts
-      return () => window.removeEventListener('load', onPageLoad);
-    }
-  }, []);
-
   let handleSubmit: Function = function (e: Event) {
-    debugger;
 
     e.preventDefault();
     debugger
     if (handleValidation(formValues)) return;
     var postData: any = { ...formValues, subject: "Message from utsavkuinkel.com.np" };
-    let success = false;
+    // let success = false;
     toast.promise(
       fetch('https://utshaav.bsite.net/api/mail/send', {
         method: 'post',
@@ -108,10 +91,10 @@ function Contact() {
                 <p>Feel free to send me a message in the contact form</p>
                 <br />
                 <div className="social-container">
-                  <a href="https://fb.com/utshaav" target="_blank" className="social"><i className="fab fa-2x fa-facebook-square"></i></a>
-                  <a href="https://www.instagram.com/utshaav_" target={"_blank"} className="social"><i className="fab fa-2x fa-instagram"></i></a>
-                  <a href="https://www.linkedin.com/in/utshaav/" target={"_blank"} className="social"><i className="fab fa-2x fa-linkedin"></i></a>
-                  <a href="https://github.com/utshaav" target={"_blank"} className="social"><i className="fab fa-2x fa-github"></i></a>
+                  <a href="https://fb.com/utshaav" target="_blank" rel="noreferrer" className="social"><i className="fab fa-2x fa-facebook-square"></i></a>
+                  <a href="https://www.instagram.com/utshaav_" target={"_blank"} rel="noreferrer" className="social"><i className="fab fa-2x fa-instagram"></i></a>
+                  <a href="https://www.linkedin.com/in/utshaav/" target={"_blank"} rel="noreferrer" className="social"><i className="fab fa-2x fa-linkedin"></i></a>
+                  <a href="https://github.com/utshaav" target={"_blank"} rel="noreferrer" className="social"><i className="fab fa-2x fa-github"></i></a>
                 </div>
               </div>
             </div>

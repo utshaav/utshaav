@@ -1,13 +1,12 @@
-import React, { ReactNode } from 'react'
-import { Link, Routes, Route, BrowserRouter, HashRouter } from 'react-router-dom'
+import React from 'react'
+import { Routes, Route, HashRouter } from 'react-router-dom'
 import NavBar from '../Components/navbar/NavBar';
 import SignIn from '../screens/Authorization/SignIn';
 import Contact from '../screens/Contact/Contact';
 import DisplayDocs from '../screens/Documentations/DisplayDocs';
-import Introduction from '../screens/Introduction';
+import Introduction from '../screens/Introduction/Introduction';
 import PageNotFound from '../screens/PageNotFound';
 import StopWatch from '../screens/Stopwatch/Stopwatch';
-import Timer from '../screens/Stopwatch/Timer';
 
 // interface ButtonProps {
 //     children: ReactNode;
