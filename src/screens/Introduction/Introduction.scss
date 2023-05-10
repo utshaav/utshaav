@@ -33,6 +33,54 @@
     font-weight: bold;
 }
 
+.title{
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline wavy;
+}
+
+
+
+.top-sticker{
+    position: absolute;
+    top:0;
+    left: 0;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    .triangle{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-right: 50px solid #555;
+        border-bottom: 25px solid transparent;
+        transform: rotate(170deg) scale(8);
+
+    }
+}
+
+.bottom-sticker{
+    position: absolute;
+    bottom:0;
+    right: 0;
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+    .triangle{
+        position: absolute;
+        bottom:1px;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-right: 50px solid #555;
+        border-bottom: 25px solid transparent;
+        transform: rotate(350deg) scale(8);    
+    }
+}
 
 // p {
 //     animation-name: change-color, grow-shrink, expand;
