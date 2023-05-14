@@ -17,7 +17,7 @@ function DisplayDocs() {
                 .then(res => {
                     fetch(res.default)
                         .then(res => res.text())
-                        .then(res =>{
+                        .then(res => {
                             document.getElementById("Docs")!.innerHTML = marked.parse(res);
                         })
                         .catch(err => console.warn(err));
@@ -28,22 +28,29 @@ function DisplayDocs() {
         }
     }
 
+    useEffect(() => {
+        var body = document.getElementsByTagName('body') as HTMLCollectionOf<HTMLElement>;
+        Array.from(body).forEach(element => {
+            element.style.overflowY = 'auto'
+        });
+    })
+
     return (
         <div className='container'>
             {selectedDoc == "" &&
-            <div className='docs_list'>
-                <h3>Available Docs</h3>
-                <ul>
-                {listOfDocs.map(function (e,i) {
-                    return <li key={i}><a id={e} onClick={() => handleLinkClick(e)}> {e} </a></li>
-                })}
-                </ul>
-                
-            </div>}
+                <div className='docs_list'>
+                    <h3>Available Docs</h3>
+                    <ul>
+                        {listOfDocs.map(function (e, i) {
+                            return <li key={i}><a id={e} onClick={() => handleLinkClick(e)}> {e} </a></li>
+                        })}
+                    </ul>
+
+                </div>}
             {selectedDoc != "" &&
-            <div className='markdown-body' id="Docs">
-                
-            </div>}
+                <div className='markdown-body' id="Docs">
+
+                </div>}
         </div>
 
     )

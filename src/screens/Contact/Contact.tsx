@@ -9,9 +9,8 @@ type contactInput = {
   phone: string | null
   company: string | null
 }
-
+let count = 0;
 function Contact() {
-
   let initialValues: contactInput = { name: "", email: "", message: "", phone: "", company: "" };
   const [formValues, setFormValues] = useState(initialValues);
   const [formErrors, setFormErrors] = useState(initialValues);
@@ -24,7 +23,11 @@ function Contact() {
   let handleSubmit: Function = function (e: Event) {
 
     e.preventDefault();
-    debugger
+    count++;
+    if(count >=3 ){
+      debugger
+      setFormSubmitted(true);
+    }
     if (handleValidation(formValues)) return;
     var postData: any = { ...formValues, subject: "Message from utsavkuinkel.com.np" };
     // let success = false;

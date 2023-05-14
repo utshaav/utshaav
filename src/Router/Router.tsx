@@ -17,9 +17,8 @@ import StopWatch from '../screens/Stopwatch/Stopwatch';
 function Router() {
   return (
     <HashRouter basename={process.env.PUBLIC_URL}>
-      <div>
-        <NavBar />
-      </div>
+
+      <NavBar />
       <Routes>
         {["/home", "/", "/utshaav", ""].map((path, index) =>
           <Route path={path} key={index} element={<Introduction />} />
