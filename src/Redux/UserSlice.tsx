@@ -22,7 +22,7 @@ export const userSlice = createSlice({
             // state.Token = action.payload.Token;
             state = action.payload;
         },
-        logout: (state) => {
+        logout: (state,action) => {
             state = initialState;
         }
     }
