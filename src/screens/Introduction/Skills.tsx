@@ -4,7 +4,7 @@ import image from '../../assets/images/skills.gif';
 
 function Skills() {
     return (
-        <div className="row " style={{ height: '100vh' }}>
+        <div className="row " style={{ height: '100vh', paddingTop: '4vh'}}>
             <div className={`${em.experience_text} col-md-7 center`}>
                 <h3 className='title'>Skills</h3>
                 <table>

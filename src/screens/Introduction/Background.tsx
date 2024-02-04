@@ -4,7 +4,7 @@ import image from '../../assets/images/brief.gif';
 
 function Background() {
     return (
-        <div className="row " style={{ height: '100vh' }}>
+        <div className="row " style={{ height: '100vh',paddingTop: '4vh' }}>
             <div className="col-md-5 center image" style={{}} >
                 <img className={em.image} src={image} alt="Mero pic lol" />
             </div>

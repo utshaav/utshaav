@@ -4,7 +4,7 @@ import './NavBar.scss'
 
 function NavBar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container-fluid">
         <Link to="/"  className="navbar-brand" >
           <span className='branding'>Utsav</span>

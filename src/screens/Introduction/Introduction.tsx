@@ -12,64 +12,75 @@ import Skills from "./Skills";
 interface HandleChange {
   direction: "next" | "previous",
   index: number,
-  event: React.MouseEvent
+  event: React.MouseEvent | Event
 }
 
 function Introduction() {
-  let i: number = 1;
+  let i: number = 0;
   function handlePageChange(param: HandleChange) {
     debugger;
     // if (!(i >= 0 && i <= 1)) return;
     if (param.direction === "next") {
       i++;
-      window.scrollBy({ top: document.documentElement.clientHeight,behavior: "smooth"})
+      window.scrollBy({ top: document.documentElement.clientHeight, behavior: "smooth" })
       param.event.preventDefault();
     }
     if (param.direction === "previous") {
       i--;
-      window.scrollBy({ top: (document.documentElement.clientHeight) * -1,behavior: "smooth" })
+      window.scrollBy({ top: (document.documentElement.clientHeight) * -1, behavior: "smooth" })
       param.event.preventDefault();
     }
-    // let topStickerArrays = Array.from(document.getElementsByClassName('top-sticker') as HTMLCollectionOf<HTMLElement>)
-    // let bottomStickerArrays = Array.from(document.getElementsByClassName('bottom-sticker') as HTMLCollectionOf<HTMLElement>)
-    // if (i > 0) {
-    //   topStickerArrays.forEach(element => {
-    //     element.style.display = "block"
-    //   });
-    //   // for(let key in ){
+    let topStickerArrays = Array.from(document.getElementsByClassName('scroll-animation-container-top') as HTMLCollectionOf<HTMLElement>)
+    let bottomStickerArrays = Array.from(document.getElementsByClassName('scroll-animation-container-bottom') as HTMLCollectionOf<HTMLElement>)
+    if (i > 0) {
+      topStickerArrays.forEach(element => {
+        element.style.display = "block"
+      });
+      // for(let key in ){
 
-    //   // }
-    // }
-    // else {
-    //   topStickerArrays.forEach(element => {
-    //     element.style.display = "none"
-    //   });
-    // }
-    // if (i < 0) {
-    //   bottomStickerArrays.forEach(element => {
-    //     element.style.display = "block"
-    //   });
-    // }
-    // else {
-    //   bottomStickerArrays.forEach(element => {
-    //     element.style.display = "none"
-    //   });
-    // }
+      // }
+    }
+    else {
+      topStickerArrays.forEach(element => {
+        element.style.display = "none"
+      });
+    }
+    if (i < 3) {
+      bottomStickerArrays.forEach(element => {
+        element.style.display = "block"
+      });
+    }
+    else {
+      bottomStickerArrays.forEach(element => {
+        element.style.display = "none"
+      });
+    }
   }
-  document.addEventListener('scroll', event => {
-    console.log(event);
-  })
+  let oldScrollY = window.scrollY;
+
+  // window.onscroll = (e) => {
+    
+  //   console.log("Hehehe luffy")
+  //   if(oldScrollY < window.scrollY){
+  //     handlePageChange({direction:"next", index: 1, event:e})
+  //   }
+  //   else{
+  //     handlePageChange({direction:"previous", index: 1, event:e})
+  //   }
+  //   oldScrollY = window.scrollY
+  // }
+  
   useEffect(() => {
     var body = document.getElementsByTagName('body') as HTMLCollectionOf<HTMLElement>;
     Array.from(body).forEach(element => {
-       element.style.overflowY = 'hidden'
+      element.style.overflowY = 'hidden'
     });
-   })
+  })
   return (
     <>
       <div className="container">
         {/* <CodeSnipp /> */}
-        <div className="row " style={{ height: '93vh' }}>
+        <div className="row " style={{ height: '100vh', paddingTop: '10vh' }}>
           <div className="intro_text col-md-6 center">
             <p>Hello 👋 <br /><br />
               I am <span className="myname" data-text="Utsav Kuinkel">Utsav Kuinkel</span>.
@@ -86,6 +97,12 @@ function Introduction() {
           <div className="col-md-6 center image" style={{}} >
             <img className="" src={image} alt="Mero pic lol" />
           </div>
+          <div className="scroll-animation-container-top" style={{ display: "none" }}>
+            <div className="scroll-animation top" onClick={(e) => handlePageChange({ direction: "previous", index: 1, event: e })}></div>
+          </div>
+          <div className="scroll-animation-container-bottom">
+            <div className="scroll-animation bottom" onClick={(e) => handlePageChange({ direction: "next", index: 1, event: e })}></div>
+          </div>
         </div>
         <Background />
         <Skills />
@@ -96,12 +113,11 @@ function Introduction() {
         <div className="triangle">
         </div>
         <a href="#" >Next</a>
-
       </div> */}
 
-      <div className="bottom-sticker ">
-        {/* <div className="triangle">
-        </div> */}
+      {/* <div className="bottom-sticker ">
+        { <div className="triangle">
+        </div> }
         <div>
 
           <a href="#" title="Previous section"  onClick={(e) => handlePageChange({ direction: "previous", index: 1, event: e })} >👆</a>
@@ -109,7 +125,7 @@ function Introduction() {
           <a href="#" title="Next Section" onClick={(e) => handlePageChange({ direction: "next", index: 1, event: e })} >👇</a>
         </div>
 
-      </div>
+      </div> */}
     </>
   )
 }
