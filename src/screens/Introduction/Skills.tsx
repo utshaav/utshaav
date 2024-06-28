@@ -1,10 +1,11 @@
 import React from 'react'
 import em from './Experience.module.scss';
 import image from '../../assets/images/skills.gif';
+import Arrow from '../../Components/Arrow';
 
 function Skills() {
     return (
-        <div className="row " style={{ height: '100vh', paddingTop: '4vh'}}>
+        <div id='skills' className="row s-row" style={{ height: '100vh', paddingTop: '4vh' }}>
             <div className={`${em.experience_text} col-md-7 center`}>
                 <h3 className='title'>Skills</h3>
                 <table>
@@ -72,6 +73,13 @@ function Skills() {
             <div className="col-md-5 center image" style={{}} >
                 <img className={em.image} src={image} alt="Mero pic lol" />
             </div>
+            {/* <a href='#experience'> */}
+
+                <div className="bottom-left">
+                    <span className="text">EXPERIENCE</span>
+                    <Arrow />
+                </div>
+            {/* </a> */}
         </div>
     )
 }

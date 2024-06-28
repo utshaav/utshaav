@@ -4,7 +4,7 @@ import image from '../../assets/images/programmer.gif';
 
 function Experience() {
     return (
-        <div className="row " style={{ height: '100vh', paddingTop: '4vh'}}>
+        <div className="row s-row" style={{ height: '100vh', paddingTop: '4vh'}}>
             <div className="col-md-5 center image" style={{}} >
                 <img className={em.image} src={image} alt="Mero pic lol" />
             </div>

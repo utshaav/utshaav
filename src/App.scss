@@ -1,5 +1,5 @@
 body {
-	overflow-y: hidden;
+	// overflow-y: hidden;`
 }
 
 .App {
@@ -57,117 +57,117 @@ body {
 	font-family: Branding !important;
 }
 
-.scroll-animation-container-top {
-	// z-index: 10000;
-	top: 8vh;
-	position: fixed;
-	left: 50%;
+// .scroll-animation-container-top {
+// 	// z-index: 10000;
+// 	top: 8vh;
+// 	position: fixed;
+// 	left: 50%;
 
-	.scroll-animation {
-		animation: up 1.5s infinite;
-		-webkit-animation: up 1.5s infinite;
+// 	.scroll-animation {
+// 		animation: up 1.5s infinite;
+// 		-webkit-animation: up 1.5s infinite;
 
-		&::before {
-			top: 23px;
-			left: 18px;
-			width: 18px;
-			height: 18px;
-			transform: rotate(135deg);
-		}
-	}
+// 		&::before {
+// 			top: 23px;
+// 			left: 18px;
+// 			width: 18px;
+// 			height: 18px;
+// 			transform: rotate(135deg);
+// 		}
+// 	}
 
-}
+// }
 
-.scroll-animation-container-bottom {
-	bottom: 0;
-	position: fixed;
-	left: 50%;
+// .scroll-animation-container-bottom {
+// 	bottom: 0;
+// 	position: fixed;
+// 	left: 50%;
 
-	.scroll-animation {
-		animation: down 1.5s infinite;
-		-webkit-animation: down 1.5s infinite;
+// 	.scroll-animation {
+// 		animation: down 1.5s infinite;
+// 		-webkit-animation: down 1.5s infinite;
 
-		&::before {
-			top: 15px;
-			left: 18px;
-			width: 18px;
-			height: 18px;
-			transform: rotate(-45deg);
-		}
-	}
-}
+// 		&::before {
+// 			top: 15px;
+// 			left: 18px;
+// 			width: 18px;
+// 			height: 18px;
+// 			transform: rotate(-45deg);
+// 		}
+// 	}
+// }
 
 
-.scroll-animation {
+// .scroll-animation {
 
-	display: flex;
-	align-items: center;
-	width: 60px;
-	height: 60px;
-	border: 2px solid #333;
-	border-radius: 50%;
-	position: relative;
+// 	display: flex;
+// 	align-items: center;
+// 	width: 60px;
+// 	height: 60px;
+// 	border: 2px solid #333;
+// 	border-radius: 50%;
+// 	position: relative;
 
-	&::before {
-		content: '';
-		position: absolute;
-		border-left: 2px solid #333;
-		border-bottom: 2px solid #333;
-	}
-}
+// 	&::before {
+// 		content: '';
+// 		position: absolute;
+// 		border-left: 2px solid #333;
+// 		border-bottom: 2px solid #333;
+// 	}
+// }
 
-@keyframes down {
-	0% {
-		transform: translate(0);
-	}
+// @keyframes down {
+// 	0% {
+// 		transform: translate(0);
+// 	}
 
-	20% {
-		transform: translateY(15px);
-	}
+// 	20% {
+// 		transform: translateY(15px);
+// 	}
 
-	40% {
-		transform: translate(0);
-	}
-}
+// 	40% {
+// 		transform: translate(0);
+// 	}
+// }
 
-@-webkit-keyframes down {
-	0% {
-		transform: translate(0);
-	}
+// @-webkit-keyframes down {
+// 	0% {
+// 		transform: translate(0);
+// 	}
 
-	20% {
-		transform: translateY(15px);
-	}
+// 	20% {
+// 		transform: translateY(15px);
+// 	}
 
-	40% {
-		transform: translate(0);
-	}
-}
+// 	40% {
+// 		transform: translate(0);
+// 	}
+// }
 
-@keyframes up {
-	0% {
-		transform: translate(0);
-	}
+// @keyframes up {
+// 	0% {
+// 		transform: translate(0);
+// 	}
 
-	20% {
-		transform: translateY(-15px);
-	}
+// 	20% {
+// 		transform: translateY(-15px);
+// 	}
 
-	40% {
-		transform: translate(0);
-	}
-}
+// 	40% {
+// 		transform: translate(0);
+// 	}
+// }
 
-@-webkit-keyframes up {
-	0% {
-		transform: translate(0);
-	}
+// @-webkit-keyframes up {
+// 	0% {
+// 		transform: translate(0);
+// 	}
 
-	20% {
-		transform: translateY(-15px);
-	}
+// 	20% {
+// 		transform: translateY(-15px);
+// 	}
 
-	40% {
-		transform: translate(0);
-	}
-}
+// 	40% {
+// 		transform: translate(0);
+// 	}
+// }
