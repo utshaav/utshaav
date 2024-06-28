@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.cf08c28b.css",
-    "main.js": "/static/js/main.b7cea6e6.js",
+    "main.css": "/static/css/main.61c3e8f8.css",
+    "main.js": "/static/js/main.6b25466c.js",
     "static/js/448.724ab789.chunk.js": "/static/js/448.724ab789.chunk.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/programmer.gif": "/static/media/programmer.3f9276c16c7a62721d17.gif",
     "static/media/skills.gif": "/static/media/skills.2b940e91c9da9516d4e1.gif",
     "static/media/prog3.gif": "/static/media/prog3.0e68b4343288ee8bbc45.gif",
-    "static/media/brief.gif": "/static/media/brief.56171926d7dbbd880bdc.gif",
+    "static/media/brief3.gif": "/static/media/brief3.db3c697e31125a5514b5.gif",
     "static/media/pnf.gif": "/static/media/pnf.1d392db25f108df63913.gif",
     "static/media/Heartbeat-sound-effect.mp3": "/static/media/Heartbeat-sound-effect.cabf72ff90243bb48f20.mp3",
     "static/media/background.jpg": "/static/media/background.3e6312e8fbba77c87020.jpg",
@@ -16,12 +16,12 @@
     "static/media/clockicons.ttf": "/static/media/clockicons.bbea6b2ddde369d06918.ttf",
     "index.html": "/index.html",
     "static/media/KnowledgeSharing.md": "/static/media/KnowledgeSharing.1009e56beddc3005c886.md",
-    "main.cf08c28b.css.map": "/static/css/main.cf08c28b.css.map",
-    "main.b7cea6e6.js.map": "/static/js/main.b7cea6e6.js.map",
+    "main.61c3e8f8.css.map": "/static/css/main.61c3e8f8.css.map",
+    "main.6b25466c.js.map": "/static/js/main.6b25466c.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cf08c28b.css",
-    "static/js/main.b7cea6e6.js"
+    "static/css/main.61c3e8f8.css",
+    "static/js/main.6b25466c.js"
   ]
 }
