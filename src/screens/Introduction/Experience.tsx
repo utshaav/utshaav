@@ -12,7 +12,23 @@ function Experience() {
                 <h3 className='title'>Experiences</h3>
                 <table>
                     <tbody>
-                    <tr>
+                        <tr>
+                                <th>Avega Solutions</th>
+                                <td className={em.date}>OCT 2023 </td>
+                            </tr>
+                            <tr>
+                                <td className={em.position}> Software Engineer</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td className={em.description}>
+                                    <ul>
+                                        <li>Technologies: Spring, MongoDB, SSMS, GIT, JQuery</li>
+                                        <li>Highlights: Learned spring framework.</li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        <tr>
                             <th>Nimble Infosys</th>
                             <td className={em.date}>AUG 2022 - OCT 2023</td>
                         </tr>
