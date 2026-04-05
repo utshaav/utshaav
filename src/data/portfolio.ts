@@ -13,7 +13,7 @@ export const personal: PersonalInfo = {
   email: 'utshaav583@gmail.com',
   phone: '+1 437 667 5583',
   github: 'https://github.com/utshaav',
-  linkedin: 'https://linkedin.com/in/utsav-kuinkel',
+  linkedin: 'https://linkedin.com/in/utshaav',
   summary:
     'Full Stack Developer with hands-on experience building and maintaining production systems in financial and transactional domains. Strong in backend APIs and React-driven interfaces, focused on safe releases, performance, and long-term maintainability.',
 };
