@@ -20,15 +20,15 @@ export const personal: PersonalInfo = {
 
 export const stats: Stat[] = [
   { value: '5+', label: 'Years Experience' },
-  { value: '3', label: 'Companies' },
-  { value: 'Full', label: 'Stack Capability' },
-  { value: 'BSc', label: 'Computer Science' },
+  { value: '3+', label: 'Companies' },
+  { value: 'Full Stack', label: 'Capability' },
+  { value: 'BSc', label: 'Computer Science and Information Technology' },
 ];
 
 export const skills: SkillGroup[] = [
   {
     category: 'Frontend',
-    items: ['React.js', 'Redux', 'JavaScript', 'HTML5', 'CSS3'],
+    items: ['React.js', 'Redux', 'JavaScript', 'HTML5', 'CSS3', 'Angular'],
   },
   {
     category: 'Backend & API',
@@ -36,7 +36,7 @@ export const skills: SkillGroup[] = [
   },
   {
     category: 'Databases',
-    items: ['SQL Server', 'MySQL', 'MongoDB'],
+    items: ['SQL Server', 'MySQL', 'MongoDB', 'PostgreSQL'],
   },
   {
     category: 'DevOps & Tools',

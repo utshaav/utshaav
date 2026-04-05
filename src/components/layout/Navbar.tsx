@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { ThemeToggle } from '../ui/ThemeToggle';
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -31,6 +32,7 @@ const Navbar: React.FC = () => {
       </a>
       <ul style={{ display: 'flex', gap: '2.5rem', listStyle: 'none' }}>
         {navLinks.map((link) => <NavLink key={link.href} href={link.href}>{link.label}</NavLink>)}
+        <ThemeToggle />
       </ul>
     </nav>
   );
